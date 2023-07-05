@@ -4,6 +4,7 @@ import About from '../About/About';
 import Services from '../Services/Services';
 import { FaBars, FaFacebookF, FaGithub, FaInstagramSquare, FaLinkedinIn } from "react-icons/fa";
 import pappu from "../../assets/images/my-pic.jpeg"
+import HomeDefault from '../HomeDefault/HomeDefault';
 
 
 
@@ -14,25 +15,27 @@ const Navbar = () => {
                 <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
                 <div className="drawer-content flex flex-col items-center justify-center relative">
                     {/* Page content here */}
+                    <Element name="home" className="section">
+                        <HomeDefault></HomeDefault>
+                    </Element>
                     <Element name="about" className="section">
-                        {/* Content of your services section */}
                         <About></About>
                     </Element>
                     <Element name="services" className="section">
                         <Services></Services>
                     </Element>
-                    <label htmlFor="my-drawer-2" className=" top-2 left-2 text-3xl fixed drawer-button lg:hidden"><FaBars></FaBars></label>
+                    <label htmlFor="my-drawer-2" className="text-white top-2 left-2 text-3xl fixed drawer-button lg:hidden"><FaBars></FaBars></label>
 
                 </div>
                 <div className="drawer-side">
                     <label htmlFor="my-drawer-2" className="drawer-overlay"></label>
-                    <ul className="menu p-4 w-80 h-full bg-black text-white uppercase  items-center justify-between ">
+                    <ul className="menu p-4 w-80 h-full bg-black text-white font-semibold text-[16px]  items-center justify-between ">
                         {/* Sidebar content here */}
-                        <div className='md:hidden lg:block font-bold uppercase pt-10 flex flex-col items-center'>
+                        <div className='md:hidden lg:block font-semibold pt-10 flex flex-col items-center'>
                             <div className="tooltip normal-case" data-tip={"I'm Parvej Hasan Pappu"}>
                                 <img className='w-60 h-60 rounded-full border-8 border-[#343A40]' src={pappu} alt="" />
                             </div>
-                            <p className=' text-xl  mt-3'>Parvej Hasan Pappu</p>
+                            <p className='text-center  text-xl  mt-3'>Parvej Hasan Pappu</p>
                         </div>
                         <div className='flex flex-col items-center'>
                             <li>
