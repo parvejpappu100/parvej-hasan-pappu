@@ -2,7 +2,8 @@ import React from 'react';
 import { Link, Element } from 'react-scroll';
 import About from '../About/About';
 import Services from '../Services/Services';
-import { FaBars } from "react-icons/fa";
+import { FaBars, FaFacebookF, FaGithub, FaInstagramSquare, FaLinkedinIn } from "react-icons/fa";
+import pappu from "../../assets/images/my-pic.jpeg"
 
 
 
@@ -25,31 +26,44 @@ const Navbar = () => {
                 </div>
                 <div className="drawer-side">
                     <label htmlFor="my-drawer-2" className="drawer-overlay"></label>
-                    <ul className="menu p-4 w-80 h-full bg-base-200 text-base-content uppercase">
+                    <ul className="menu p-4 w-80 h-full bg-black text-white uppercase  items-center justify-between ">
                         {/* Sidebar content here */}
-                        <li>
-                            <Link to="home" smooth={true} duration={500}>Home</Link>
-                        </li>
-                        <li>
-                            <Link to="about" smooth={true} duration={500}>About Me</Link>
-                        </li>
-                        <li>
-                            <Link to="services" smooth={true} duration={500}>What I Do</Link>
-                        </li>
-                        <li>
-                            <Link to="resume" smooth={true} duration={500}>Resume</Link>
-                        </li>
-                        <li>
-                            <Link to="portfolio" smooth={true} duration={500}>Portfolio</Link>
-                        </li>
-                        <li>
-                            <Link to="testimonial" smooth={true} duration={500}>Testimonial</Link>
-                        </li>
-                        <li>
-                            <Link to="contact" smooth={true} duration={500}>Contact</Link>
-                        </li>
+                        <div className='md:hidden lg:block font-bold uppercase pt-10 flex flex-col items-center'>
+                            <div className="tooltip normal-case" data-tip={"I'm Parvej Hasan Pappu"}>
+                                <img className='w-60 h-60 rounded-full border-8 border-[#343A40]' src={pappu} alt="" />
+                            </div>
+                            <p className=' text-xl  mt-3'>Parvej Hasan Pappu</p>
+                        </div>
+                        <div className='flex flex-col items-center'>
+                            <li>
+                                <Link className='hover:text-green-500' to="home" smooth={true} duration={500}>Home</Link>
+                            </li>
+                            <li>
+                                <Link className='hover:text-green-500' to="about" smooth={true} duration={500}>About Me</Link>
+                            </li>
+                            <li>
+                                <Link className='hover:text-green-500' to="services" smooth={true} duration={500}>What I Do</Link>
+                            </li>
+                            <li>
+                                <Link className='hover:text-green-500' to="resume" smooth={true} duration={500}>Resume</Link>
+                            </li>
+                            <li>
+                                <Link className='hover:text-green-500' to="portfolio" smooth={true} duration={500}>Portfolio</Link>
+                            </li>
+                            <li>
+                                <Link className='hover:text-green-500' to="testimonial" smooth={true} duration={500}>Testimonial</Link>
+                            </li>
+                            <li>
+                                <Link className='hover:text-green-500' to="contact" smooth={true} duration={500}>Contact</Link>
+                            </li>
+                        </div>
+                        <div className='text-[#AAB1B8] flex gap-4 text-xl justify-center'>
+                            <FaFacebookF></FaFacebookF>
+                            <FaGithub></FaGithub>
+                            <FaLinkedinIn></FaLinkedinIn>
+                            <FaInstagramSquare></FaInstagramSquare>
+                        </div>
                     </ul>
-
                 </div>
             </div>
         </div>
