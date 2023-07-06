@@ -61,10 +61,18 @@ const Navbar = () => {
                             </li>
                         </div>
                         <div className='text-[#AAB1B8] flex gap-4 text-xl justify-center'>
-                            <FaFacebookF></FaFacebookF>
-                            <FaGithub></FaGithub>
-                            <FaLinkedinIn></FaLinkedinIn>
-                            <FaInstagramSquare></FaInstagramSquare>
+                            <div className='tooltip' data-tip="Facebook">
+                                <a href="https://www.facebook.com/pappu.parvejhasan/" target='_blank'><FaFacebookF></FaFacebookF></a>
+                            </div>
+                            <div className='tooltip' data-tip="GitHub">
+                                <a href="https://github.com/parvejpappu100" target='_blank'><FaGithub></FaGithub></a>
+                            </div>
+                            <div className='tooltip' data-tip="Linkedin">
+                                <a href="https://www.linkedin.com/in/parvej-hasan-pappu-569730278/" target='_blank'><FaLinkedinIn></FaLinkedinIn></a>
+                            </div>
+                            <div className='tooltip' data-tip="Instagram">
+                                <a href="https://www.instagram.com/parvejhasanpappu100/" target='_blank'><FaInstagramSquare></FaInstagramSquare></a>
+                            </div>
                         </div>
                     </ul>
                 </div>
