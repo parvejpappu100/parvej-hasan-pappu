@@ -18,7 +18,7 @@ const HomeDefault = () => {
                   // Same substring at the start will only be typed out once, initially
                   "I'm a Web Developer",
                   1000, // wait 1s before replacing "Mice" with "Hamsters"
-                  "I'm a Mern Stack Developer",
+                  "I'm a MERN Stack Developer",
                   1000,
                   "I'm a ReactJS Developer",
                   1000,
