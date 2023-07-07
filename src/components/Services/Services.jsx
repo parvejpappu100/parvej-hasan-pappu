@@ -1,10 +1,94 @@
 import React from 'react';
+import SectionTitle from '../SectionTitle/SectionTitle';
+import { FaCloudUploadAlt, FaCode, FaCodeBranch, FaServer } from "react-icons/fa";
+import { MdBuild, MdWeb } from 'react-icons/md';
+import { AiOutlineMobile } from 'react-icons/ai';
+import { GiDatabase } from 'react-icons/gi';
+
 
 const Services = () => {
     return (
-        <div className='py-28 mt-20 '>
-            <h1>This is services page</h1>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta quam similique sed culpa fuga tempore debitis ducimus nihil aspernatur ea neque, voluptate laboriosam velit cupiditate doloribus vero ratione incidunt, perferendis assumenda! Asperiores, sed illo ipsam quo nesciunt commodi nulla est veritatis quia, aut beatae esse natus odit, a dolores dolorum aperiam ullam? Est eveniet corporis architecto tempore error doloremque recusandae consequuntur ipsum. Exercitationem laboriosam natus quaerat ullam recusandae corrupti esse asperiores sunt, molestiae laborum architecto magnam nihil rerum qui vero doloribus culpa, beatae officiis fuga saepe dignissimos nesciunt! Fugit quis in maxime laborum voluptatem nisi dolore, delectus fugiat totam mollitia nesciunt, officiis velit! Repellat dolore adipisci quae tenetur odit, natus assumenda odio voluptates, numquam sint consectetur. Quo amet cupiditate explicabo incidunt voluptas perspiciatis rerum eos quaerat eum. Ipsa perspiciatis corrupti veniam quisquam! Debitis corporis autem atque. Soluta eaque vero facilis, cupiditate rerum esse quidem aut dolorem necessitatibus nisi, ea a, itaque ipsum? Repudiandae rem tempora, incidunt ducimus sapiente molestias vero quisquam odit? Debitis eaque ipsum numquam, qui, nihil commodi, ipsa quo recusandae dolor cumque ea illum cum quam enim error in vitae nam suscipit expedita. Cumque omnis placeat itaque laudantium inventore illo ipsa aliquid quidem quis facilis doloremque atque fugit quibusdam officia, excepturi voluptatibus velit, consequatur dolore sit, veniam consequuntur quisquam in. In consequatur ratione repellat excepturi beatae nesciunt culpa dicta odit! Minus similique, illum modi necessitatibus cum sed cupiditate. Rem labore nisi, amet velit assumenda fuga nostrum dolorum delectus aperiam sapiente tenetur modi iusto ex quam beatae repudiandae commodi? Recusandae reprehenderit mollitia ullam esse nulla temporibus commodi at quasi, pariatur officia ipsam, harum magni hic non natus voluptate eius beatae et architecto porro ducimus fugit aspernatur exercitationem. Corporis itaque, eligendi consequatur dolore quas doloremque non rem consequuntur quod id laboriosam repudiandae debitis nesciunt aspernatur dolorum assumenda ut fugiat totam minima fugit, rerum inventore? Consectetur odio, deleniti necessitatibus sapiente, iste earum in dolorem esse voluptatem recusandae mollitia ipsa, consequuntur architecto beatae ad? Aperiam quos odio nobis! Temporibus magni illo repellat, provident minus ex blanditiis quidem vero unde accusantium adipisci consequatur sint quod voluptatem ad ut voluptatum excepturi deserunt perferendis deleniti repellendus esse facilis dolor reprehenderit. Excepturi nam iusto porro esse ab minus sapiente nobis, quaerat vero quam, mollitia fugit aut magnam odio tenetur impedit? Ratione quidem aut quod tenetur iste animi voluptate, aperiam facilis omnis impedit iure incidunt ullam saepe. Ut dolorum exercitationem sit voluptate tenetur provident, ea libero, voluptates voluptatibus obcaecati culpa. Repudiandae fuga, atque adipisci in illum ut ratione dolores maxime quibusdam commodi et modi laborum itaque consequuntur nostrum. Impedit quis magnam maiores, enim ipsa ex provident explicabo dicta labore et facilis dolore ducimus reiciendis illo mollitia? Corrupti, fuga facilis illum facere ipsam, autem nihil ratione et dolor cupiditate minus sed tenetur. Tenetur quisquam, rerum, odio non veniam earum voluptatibus similique soluta, quos facilis nam nemo suscipit. Velit animi illum optio placeat ipsum soluta obcaecati error molestias sed sunt vero porro odio aliquam voluptatibus a corrupti, impedit excepturi nisi quibusdam at doloremque voluptate modi labore esse! Hic, vel.
+        <div className='bg-[#F8F9FA]'>
+            <div className='py-28 mt-20  max-w-7xl mx-auto'>
+                <SectionTitle
+                    title={"Services"}
+                    subTitle={"What I Do"}
+                ></SectionTitle>
+                <div className='grid px-2 md:px-4 lg:px-0 lg:grid-cols-2 gap-8 mt-24'>
+                     <div className='flex gap-5'>
+                        <div className='rounded shadow-md w-32 h-20 p-5 bg-white text-3xl text-[#20C997]'>
+                            <FaCode></FaCode>
+                        </div>
+                        <div>
+                            <h4 className='text-xl font-semibold'>Full-Stack Web Development</h4>
+                            <p>Develop end-to-end web applications using the MERN (MongoDB, Express, React, Node.js) stack, ensuring seamless integration between the frontend and backend.</p>
+                        </div>
+                     </div>
+                     <div className='flex gap-5'>
+                        <div className='rounded shadow-md w-32 h-20 p-5 bg-white text-3xl text-[#20C997]'>
+                            <MdWeb></MdWeb>
+                        </div>
+                        <div>
+                            <h4 className='text-xl font-semibold'>Custom Web Application Development</h4>
+                            <p>Build customized web applications tailored to your specific business needs, leveraging the power of the MERN stack to deliver high-performance and scalable solutions.</p>
+                        </div>
+                     </div>
+                     <div className='flex gap-5'>
+                        <div className='rounded shadow-md w-32 h-20 p-5 bg-white text-3xl text-[#20C997]'>
+                            <AiOutlineMobile></AiOutlineMobile>
+                        </div>
+                        <div>
+                            <h4 className='text-xl font-semibold'>Responsive UI/UX Design</h4>
+                            <p>Create intuitive and visually appealing user interfaces that adapt smoothly across different devices, providing an exceptional user experience on desktops, tablets, and mobile devices.</p>
+                        </div>
+                     </div>
+                     <div className='flex gap-5'>
+                        <div className='rounded shadow-md w-32 h-20 p-5 bg-white text-3xl text-[#20C997]'>
+                            <FaServer></FaServer>
+                        </div>
+                        <div>
+                            <h4 className='text-xl font-semibold'>RESTful API Development</h4>
+                            <p>Design and develop robust APIs using Express and Node.js, allowing smooth communication between your frontend and backend components and enabling seamless data flow.</p>
+                        </div>
+                     </div>
+                     <div className='flex gap-5'>
+                        <div className='rounded shadow-md w-28 h-20 p-5 bg-white text-3xl text-[#20C997]'>
+                            <GiDatabase></GiDatabase>
+                        </div>
+                        <div>
+                            <h4 className='text-xl font-semibold'>Database Integration and Management</h4>
+                            <p>Implement MongoDB as the database solution for your web applications, ensuring efficient data storage, retrieval, and management.</p>
+                        </div>
+                     </div>
+                     <div className='flex gap-5'>
+                        <div className='rounded shadow-md w-32 h-20 p-5 bg-white text-3xl text-[#20C997]'>
+                            <FaCodeBranch></FaCodeBranch>
+                        </div>
+                        <div>
+                            <h4 className='text-xl font-semibold'>Third-Party API Integration</h4>
+                            <p>Integrate third-party APIs to add additional functionality and enhance the capabilities of your web applications, enabling seamless integration with external services and platforms.</p>
+                        </div>
+                     </div>
+                     <div className='flex gap-5'>
+                        <div className='rounded shadow-md w-28 h-20 p-5 bg-white text-3xl text-[#20C997]'>
+                            <FaCloudUploadAlt></FaCloudUploadAlt>
+                        </div>
+                        <div>
+                            <h4 className='text-xl font-semibold'>Deployment and Hosting</h4>
+                            <p>Deploy and host your MERN stack applications on cloud platforms such as Heroku or AWS, ensuring scalability, security, and reliability.</p>
+                        </div>
+                     </div>
+                     <div className='flex gap-5'>
+                        <div className='rounded shadow-md w-32 h-20 p-5 bg-white text-3xl text-[#20C997]'>
+                            <MdBuild></MdBuild>
+                        </div>
+                        <div>
+                            <h4 className='text-xl font-semibold'>Maintenance and Support</h4>
+                            <p>Provide ongoing maintenance, updates, and support for your MERN stack applications, ensuring their smooth operation and addressing any issues that may arise.</p>
+                        </div>
+                     </div>
+                </div>
+            </div>
         </div>
     );
 };
