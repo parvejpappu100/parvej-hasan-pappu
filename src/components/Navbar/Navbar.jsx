@@ -5,6 +5,7 @@ import Services from '../Services/Services';
 import { FaBars, FaFacebookF, FaGithub, FaInstagramSquare, FaLinkedinIn } from "react-icons/fa";
 import pappu from "../../assets/images/my-pic.jpeg"
 import HomeDefault from '../HomeDefault/HomeDefault';
+import Skills from '../Skills/Skills';
 
 
 
@@ -24,7 +25,10 @@ const Navbar = () => {
                     <Element name="services" className="section">
                         <Services></Services>
                     </Element>
-                    <label htmlFor="my-drawer-2" className="text-white top-2 left-2 text-3xl fixed drawer-button lg:hidden"><FaBars></FaBars></label>
+                    <Element name="skills" className="section">
+                        <Skills></Skills>
+                    </Element>
+                    <label htmlFor="my-drawer-2" className="text-green-400 top-2 left-2 text-3xl fixed drawer-button lg:hidden"><FaBars></FaBars></label>
 
                 </div>
                 <div className="drawer-side">
@@ -48,7 +52,7 @@ const Navbar = () => {
                                 <Link className='hover:text-green-500' to="services" smooth={true} duration={500}>What I Do</Link>
                             </li>
                             <li>
-                                <Link className='hover:text-green-500' to="resume" smooth={true} duration={500}>Resume</Link>
+                                <Link className='hover:text-green-500' to="skills" smooth={true} duration={500}>Skills</Link>
                             </li>
                             <li>
                                 <Link className='hover:text-green-500' to="portfolio" smooth={true} duration={500}>Portfolio</Link>

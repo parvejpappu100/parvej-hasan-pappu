@@ -9,7 +9,7 @@ import { GiDatabase } from 'react-icons/gi';
 const Services = () => {
     return (
         <div className='bg-[#F8F9FA]'>
-            <div className='py-28 mt-20  max-w-7xl mx-auto'>
+            <div className='py-28   max-w-7xl mx-auto'>
                 <SectionTitle
                     title={"Services"}
                     subTitle={"What I Do"}
