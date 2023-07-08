@@ -1,12 +1,18 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import SectionTitle from '../SectionTitle/SectionTitle';
-import ProgressBar from 'react-progress-bar-plus';
 import 'react-progress-bar-plus/lib/progress-bar.css';
 import { FaDownload } from 'react-icons/fa';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Skills = () => {
+
+    useEffect(() => {
+        AOS.init();
+    }, []);
+
     return (
-        <div className='py-28   max-w-7xl mx-auto mt-24'>
+        <div data-aos="zoom-in-right" data-aos-duration="1000" data-aos-delay="500" className='py-28  max-w-7xl mx-auto mt-24'>
             <SectionTitle
                 title={"Skills"}
                 subTitle={"My Skills"}

@@ -1,9 +1,16 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import SectionTitle from '../SectionTitle/SectionTitle';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const About = () => {
+
+    useEffect(() => {
+        AOS.init();
+    }, []);
+
     return (
-        <div className='py-28 max-w-7xl mx-auto'>
+        <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" className='py-28 max-w-7xl mx-auto'>
             <SectionTitle
                 title={"About Me"}
                 subTitle={"Know Me More"}

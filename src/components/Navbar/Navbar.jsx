@@ -6,6 +6,7 @@ import { FaBars, FaFacebookF, FaGithub, FaInstagramSquare, FaLinkedinIn } from "
 import pappu from "../../assets/images/my-pic.jpeg"
 import HomeDefault from '../HomeDefault/HomeDefault';
 import Skills from '../Skills/Skills';
+import Projects from '../Projects/Projects';
 
 
 
@@ -27,6 +28,9 @@ const Navbar = () => {
                     </Element>
                     <Element name="skills" className="section">
                         <Skills></Skills>
+                    </Element>
+                    <Element name="portfolio" className="section">
+                        <Projects></Projects>
                     </Element>
                     <label htmlFor="my-drawer-2" className="text-green-400 top-2 left-2 text-3xl fixed drawer-button lg:hidden"><FaBars></FaBars></label>
 
