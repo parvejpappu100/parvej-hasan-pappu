@@ -11,13 +11,12 @@ const HomeDefault = () => {
       <div className='absolute top-0 left-0 w-full h-full flex justify-center items-center'>
         <div className='text-white'>
           <div className=''>
-            <h5 className='text-3xl text-center font-semibold'>Welcome</h5>
+            <h5 className='text-xl md:text-3xl text-center font-semibold'>Welcome</h5>
             <h2>
               <TypeAnimation
                 sequence={[
-                  // Same substring at the start will only be typed out once, initially
                   "I'm a Web Developer",
-                  1000, // wait 1s before replacing "Mice" with "Hamsters"
+                  1000, 
                   "I'm a MERN Stack Developer",
                   1000,
                   "I'm a ReactJS Developer",
@@ -27,12 +26,13 @@ const HomeDefault = () => {
                 ]}
                 wrapper="span"
                 speed={20}
-                style={{ fontSize: '3em', fontWeight: 'bold', display: 'inline-block' }}
+                style={{ fontWeight: 'bold', display: 'inline-block' }}
                 repeat={Infinity}
+                className='text-2xl md:text-4xl lg:text-5xl'
               />
             </h2>
-            <p className='text-xl text-center'>based is Dhaka , Bangladesh</p>
-            <div className='flex justify-center  mt-8'>
+            <p className='text-xl text-center'>based is Dhaka, Bangladesh</p>
+            <div className='flex justify-center mt-8'>
               <button className='border-2 border-green-500 rounded-full px-4 py-3 text-green-500 font-semibold uppercase hover:text-white hover:bg-[#1FB88B] duration-500'>Download Resume</button>
             </div>
           </div>

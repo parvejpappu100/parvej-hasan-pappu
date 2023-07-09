@@ -1,0 +1,62 @@
+[
+    {
+        "name": "HTML/CSS",
+        "percent": "95",
+        "_id": "1"
+    },
+    {
+        "name": "Tailwind CSS",
+        "percent": "90",
+        "_id": "2"
+    },
+    {
+        "name": "Bootstrap",
+        "percent": "80",
+        "_id": "3"
+    },
+    {
+        "name": "JavaScript",
+        "percent": "60",
+        "_id": "4"
+    },
+    {
+        "name": "ReactJS",
+        "percent": "90",
+        "_id": "5"
+    },
+    {
+        "name": "MongoDB",
+        "percent": "75",
+        "_id": "6"
+    },
+    {
+        "name": "Node",
+        "percent": "55",
+        "_id": "7"
+    },
+    {
+        "name": "Express",
+        "percent": "75",
+        "_id": "8"
+    },
+    {
+        "name": "Firebase",
+        "percent": "80",
+        "_id": "9"
+    },
+    {
+        "name": "Figma",
+        "percent": "90",
+        "_id": "10"
+    },
+    {
+        "name": "Graphics Design",
+        "percent": "50",
+        "_id": "11"
+    },
+    {
+        "name": "Communication",
+        "percent": "90",
+        "_id": "12"
+    }
+]
