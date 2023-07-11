@@ -8,17 +8,16 @@ import 'aos/dist/aos.css';
 const Skills = () => {
 
     const [skills, setSkills] = useState([]);
-    console.log(skills)
 
     useEffect(() => {
-        fetch("skills.json")
+        fetch("/skills.json")
             .then(res => res.json())
             .then(data => setSkills(data))
         AOS.init();
     }, []);
 
     return (
-        <div data-aos="zoom-in-right" data-aos-duration="1000" data-aos-delay="500" className='py-28  max-w-7xl mx-auto mt-24'>
+        <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" className='py-28  max-w-7xl mx-auto mt-24'>
             <SectionTitle
                 title={"Skills"}
                 subTitle={"My Skills"}

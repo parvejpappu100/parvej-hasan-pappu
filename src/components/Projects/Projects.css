@@ -1,0 +1,23 @@
+
+.tab-list {
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .tab {
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .tab-active {
+    background-color: #fff;
+    text-decoration: underline;
+    text-decoration-color: #36D399;
+    text-decoration-thickness: 4px;
+    color: #36D399;
+  }
+  

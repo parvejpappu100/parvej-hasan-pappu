@@ -3,6 +3,8 @@ import SectionTitle from '../SectionTitle/SectionTitle';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
+// https://i.ibb.co/7kN1xMV/GoalGuru.png
+
 const About = () => {
 
     useEffect(() => {

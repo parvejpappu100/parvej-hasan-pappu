@@ -1,0 +1,91 @@
+[
+    {
+        "_id": "1",
+        "category": "MERN",
+        "name": "GoalGurus Football Academy",
+        "details": "This is a website for a summer season football academy camp.Children will have the opportunity to learn and play football during the summer season when schools are closed.There are various types of classes available here related to football.People can come here and enroll in various courses.Football is taught here by qualified coaches.There is an admin available who can assign any user as a coach or admin for managing users and classes if desired.In addition to that, the coaches can add their managed classes here, which can be later approved by an admin to be displayed on the website.A payment system has been implemented here, allowing anyone, except for coaches and admins, to purchase courses.",
+        "technology": "HTML, CSS, Tailwind, ReactJS, MongoDB, Firebase authentication. ExpressJS, npm package.",
+        "client_link": "https://github.com/parvejpappu100/goal-gurus-football-client",
+        "server_link": "https://github.com/parvejpappu100/goal-gururs-football-server",
+        "live_link": "https://goal-gurus-football.web.app/",
+        "image": "https://i.ibb.co/7kN1xMV/GoalGuru.png"
+    },
+    {
+        "_id": "2",
+        "category": "MERN",
+        "name": "ToyVroom",
+        "details": "Users can see some toys by category.If users logged in they can add a new toy from Add a Toy.If users logged in and if they added a toy then they can see just the toy which are added by him.All user’ added toys can be seen in the all toys section of the nav link. The user does not need to be logged in to view it.",
+        "technology": "HTML, CSS, Tailwind, ReactJS, Mongo DB, Firebase authentication, ExpressJS, npm package.",
+        "client_link": "https://github.com/parvejpappu100/toy-room-client",
+        "server_link": "https://github.com/parvejpappu100/toy-room--server",
+        "live_link": "https://toy-room.web.app/",
+        "image": "https://i.ibb.co/PTQ81GT/ToyVroom.png"
+    },
+    {
+        "_id": "3",
+        "category": "MERN",
+        "name": "Thatix Cooking Recipe",
+        "details": "This is a food web site where people can see cooks and their food recipes.Here are many chefs and their information.Here are the dishes of chefs and how they are prepared.What ingredients are needed to make the food have been told.Besides, private routes have been launched on this website. For this the user has to log in here.This site has information about many restaurants. Where people can go and buy food of their choice.",
+        "technology": "HTML, CSS, Tailwind, React, js, Firebase authentication, npm package.",
+        "client_link": "https://github.com/parvejpappu100/thatix-cooking-recipe-client",
+        "server_link": "https://github.com/parvejpappu100/thatix-cooking-recipe-server",
+        "live_link": "https://thatix-cooking-recipe.web.app/",
+        "image": "https://i.ibb.co/vJM8QNG/Thatix-cooking.png"
+    },
+    {
+        "_id": "4",
+        "category": "HTML/CSS",
+        "name": "Influencer Gear",
+        "details": "Your go-to influencer gear destination. Shop our curated selection of high-quality merchandise from your favorite influencer. Discover stylish apparel, trendy accessories, and must-have gadgets. Join our community and show your support in style. [Note : It's not responsive.]",
+        "technology": "HTML, CSS",
+        "client_link": "https://github.com/parvejpappu100/ecomerce-interface",
+        "server_link": "",
+        "live_link": "https://parvejpappu100.github.io/ecomerce-interface/",
+        "image": "https://i.ibb.co/gDBkPp8/Influencer.png"
+    },
+    {
+        "_id": "5",
+        "category": "HTML/CSS",
+        "name": "Convention Center",
+        "details": "This is an event management website. Here the responsibility of the event is taken in different categories.",
+        "technology": "HTML, CSS , Bootstrap",
+        "client_link": "https://github.com/parvejpappu100/convention-center",
+        "server_link": "",
+        "live_link": "https://parvejpappu100.github.io/convention-center/",
+        "image": "https://i.ibb.co/P6HQ7LR/Screencapture-monumental-bavarois-9714c8-netlify-app-2023-07-10-12-48-18.png"
+    },
+    {
+        "_id": "6",
+        "category": "HTML/CSS",
+        "name": "G3 Architects",
+        "details": "This is an architecture company website. Here the building can be visited.",
+        "technology": "HTML, CSS , Media Query",
+        "client_link": "https://github.com/parvejpappu100/G3-Arcitecs",
+        "server_link": "",
+        "live_link": "https://parvejpappu100.github.io/G3-Arcitecs/",
+        "image": "https://i.ibb.co/S61GCr5/G3.png"
+    },
+    {
+        "_id": "7",
+        "category": "REACT",
+        "name": "Knowledge Cafe",
+        "details": "This is a blog reading website.",
+        "technology": "HTML, CSS , Tailwind , React",
+        "client_link": "https://github.com/parvejpappu100/knowledge-c-afe",
+        "server_link": "",
+        "live_link": "https://silver-axolotl-867a48.netlify.app/",
+        "image": "https://i.ibb.co/3W9K6D1/Knowledge.png"
+    },
+    {
+        "_id": "8",
+        "category": "REACT",
+        "name": "JobQuest",
+        "details": "People can come here and look for different types of jobs.Jobs are divided into different categories here. People can find jobs according to their type of work by coming here.Here is the detailed description of the jobs.Click on the View Details button to see the detailed description. Clicking on the View Details button will take you to another route where the job details are shown.After that, if you click on the Apply Now button, all the job information will be saved on the Applied Jobs page.Besides, the assignment information and answers to some questions are given here in the form of a chart on the block page.",
+        "technology": "HTML, CSS , Tailwind , React , React Router",
+        "client_link": "https://github.com/parvejpappu100/career-hub",
+        "server_link": "",
+        "live_link": "https://musical-chimera-06c1cf.netlify.app/",
+        "image": "https://i.ibb.co/R97DVZm/Screencapture-musical-chimera-06c1cf-netlify-app-2023-07-10-12-46-27.png"
+    }
+
+]
