@@ -17,7 +17,7 @@ const Skills = () => {
     }, []);
 
     return (
-        <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" className='py-28  max-w-7xl mx-auto mt-24'>
+        <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" className='py-28  max-w-7xl mx-auto mt-24 bg-white'>
             <SectionTitle
                 title={"Skills"}
                 subTitle={"My Skills"}

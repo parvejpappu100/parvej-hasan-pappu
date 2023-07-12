@@ -11,7 +11,7 @@ const About = () => {
     }, []);
 
     return (
-        <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" className='py-28 max-w-7xl mx-auto'>
+        <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" className='py-28 max-w-7xl mx-auto bg-white'>
             <SectionTitle
                 title={"About Me"}
                 subTitle={"Know Me More"}
