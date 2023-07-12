@@ -1,13 +1,38 @@
-import React from 'react';
+import React, { useState } from 'react';
+import Modal from 'react-modal';
+import "./TabItem.css"
+import ProjectModal from './ProjectModal';
+
 
 const TabItem = ({ project }) => {
 
-    const { _id, category, name, details, image, technology, client_link, server_link, live_link } = project;
-    console.log(image)
+    const [modalIsOpen, setModalIsOpen] = useState(false);
+
+    const openModal = () => {
+        setModalIsOpen(true);
+    };
+
+    const closeModal = () => {
+        setModalIsOpen(false);
+    };
+
+    // const customModalStyles = {
+    //     content: {
+    //         backgroundColor: '', 
+    //       },
+    // };
+
+    const bg = {
+        overlay: {
+            background: "#46423E"
+        }
+    };
+
+    const { category, name, image } = project;
 
     return (
         <div>
-            <div className='relative mt-12'>
+            <div onClick={openModal} className='relative mt-12 cursor-pointer'>
                 <div className="relative max-w-full h-[450px] overflow-hidden ">
                     <div className="h-max w-full transition-transform duration-[5000ms] ease-linear transform translate-y-0 hover:-translate-y-[calc(100%-18rem)] rounded-lg">
                         <img
@@ -21,10 +46,17 @@ const TabItem = ({ project }) => {
                     <div>
                         <h3 className='text-2xl mb-3'>{name}</h3>
                         <p className='text-xl'>{category}</p>
-                        <button className="btn btn-ghost normal-case text-base bg-none border-2 border-gray-600 mt-1">Details</button>
                     </div>
                 </div>
             </div>
+            <Modal
+                isOpen={modalIsOpen}
+                onRequestClose={closeModal}
+                className="max-w-7xl bg-white mx-auto my-16 shadow-md py-4"
+                style={bg}
+            >
+                <ProjectModal project={project} closeModal={closeModal}></ProjectModal>
+            </Modal>
         </div>
     );
 };

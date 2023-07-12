@@ -13,11 +13,3 @@
     transition: background-color 0.3s ease;
   }
   
-  .tab-active {
-    background-color: #fff;
-    text-decoration: underline;
-    text-decoration-color: #36D399;
-    text-decoration-thickness: 4px;
-    color: #36D399;
-  }
-  
