@@ -48,10 +48,10 @@ const Contact = () => {
                         <h3 className='text-2xl font-semibold uppercase'>Send Me a Message</h3>
                         <div className='mt-4'>
                             <div className='flex flex-col md:flex-row gap-5'>
-                                <input className='w-full py-4 px-3 rounded-lg border' placeholder='Name' type="text" />
-                                <input className='w-full py-4 px-3 rounded-lg border' placeholder='Email' type="email" name="email" id="" />
+                                <input className='bg-white w-full py-4 px-3 rounded-lg border' placeholder='Name' type="text" />
+                                <input className='bg-white w-full py-4 px-3 rounded-lg border' placeholder='Email' type="email" name="email" id="" />
                             </div>
-                            <textarea className='w-full mt-5 p-5 rounded-lg border text-xl' name="message" placeholder='Tell me more about your needs...' id="" cols="30" rows="5"></textarea>
+                            <textarea className='bg-white w-full mt-5 p-5 rounded-lg border text-xl' name="message" placeholder='Tell me more about your needs...' id="" cols="30" rows="5"></textarea>
                             <div className='flex justify-center'>
                                 <input className='bg-[#20C997] text-white font-medium px-10 mt-5 hover:bg-[#1BAA80] duration-500 hover:shadow py-4 rounded-full text-xl' type="submit" value="Send Message" />
                             </div>
