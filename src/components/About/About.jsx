@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import SectionTitle from '../SectionTitle/SectionTitle';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { Link } from 'react-scroll';
 
 const About = () => {
 
@@ -26,7 +27,9 @@ const About = () => {
                     <p className='border-b mt-2 pb-2'><strong>Email :</strong> <span className='text-green-400 font-semibold'>parvejhasanpappu100@gmail.com</span></p>
                     <p className='border-b mt-2 pb-2'><strong>Age :</strong> 20</p>
                     <p className='border-b mt-2 pb-2'><strong>From :</strong> Dhaka , Bangladesh</p>
-                    <button className='bg-[#20C997] text-white font-semibold px-10 mt-5 hover:bg-[#1BAA80] duration-500 hover:shadow py-2 rounded-full'>Hire Me</button>
+                    <Link to="contact" smooth={true} duration={1000}>
+                        <button className='bg-[#20C997] text-white font-semibold px-10 mt-5 hover:bg-[#1BAA80] duration-500 hover:shadow py-2 rounded-full'>Hire Me</button>
+                    </Link>
                 </div>
             </div>
             <div className='grid grid-cols-2 lg:grid-cols-4 gap-5 mt-16 text-center'>
