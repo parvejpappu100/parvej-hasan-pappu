@@ -29,7 +29,7 @@ const Testimonial = () => {
                 title={"Testimonial"}
                 subTitle={"Client Speak"}
             ></SectionTitle>
-            <div className='mt-20'>
+            <div className='mt-20' >
                 <Swiper
                     slidesPerView={2}
                     spaceBetween={30}

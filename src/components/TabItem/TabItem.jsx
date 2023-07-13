@@ -16,12 +16,6 @@ const TabItem = ({ project }) => {
         setModalIsOpen(false);
     };
 
-    // const customModalStyles = {
-    //     content: {
-    //         backgroundColor: '', 
-    //       },
-    // };
-
     const bg = {
         overlay: {
             background: "#46423E"
