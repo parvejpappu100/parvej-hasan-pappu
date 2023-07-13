@@ -1,8 +1,31 @@
 import React from 'react';
 import SectionTitle from '../SectionTitle/SectionTitle';
 import { FaEnvelope, FaFacebookF, FaGithub, FaInstagramSquare, FaLinkedinIn, FaPhoneAlt } from 'react-icons/fa';
+import { useForm } from 'react-hook-form';
 
 const Contact = () => {
+
+    const { register, handleSubmit, formState: { errors }, reset } = useForm();
+
+    const onSubmit = async (data) => {
+        try {
+            await fetch('https://parvej-hasan-pappu-server.vercel.app/send-email', {
+                method: 'POST',
+                headers: {
+                    "content-type": "application/json"
+                },
+                body: JSON.stringify(data)
+            });
+        
+            reset();
+        } catch (error) {
+            console.log(error)
+        }
+
+        console.log(data.name, data.email, data.message)
+        reset();
+    }
+
     return (
         <div className='bg-[#F8F9FA] mt-24'>
             <div className='py-28 max-w-7xl mx-auto'>
@@ -46,16 +69,18 @@ const Contact = () => {
                     </div>
                     <div className='w-full'>
                         <h3 className='text-2xl font-semibold uppercase'>Send Me a Message</h3>
-                        <div className='mt-4'>
+                        <form onSubmit={handleSubmit(onSubmit)} className='mt-4'>
                             <div className='flex flex-col md:flex-row gap-5'>
-                                <input className='bg-white w-full py-4 px-3 rounded-lg border' placeholder='Name' type="text" />
-                                <input className='bg-white w-full py-4 px-3 rounded-lg border' placeholder='Email' type="email" name="email" id="" />
+                                <input {...register("name", { required: true })} className='bg-white w-full py-4 px-3 rounded-lg border' placeholder='Name' type="text" />
+                                {errors.name && <span className='text-red-600'>Name is required</span>}
+                                <input {...register("email", { required: true })} className='bg-white w-full py-4 px-3 rounded-lg border' placeholder='Email' type="email" name="email" id="" />
+                                {errors.email && <span className='text-red-600'>Email is required</span>}
                             </div>
-                            <textarea className='bg-white w-full mt-5 p-5 rounded-lg border text-xl' name="message" placeholder='Tell me more about your needs...' id="" cols="30" rows="5"></textarea>
+                            <textarea {...register("message", { required: true })} className='bg-white w-full mt-5 p-5 rounded-lg border text-xl' name="message" placeholder='Tell me more about your needs...' id="" cols="30" rows="5"></textarea>
                             <div className='flex justify-center'>
                                 <input className='bg-[#20C997] text-white font-medium px-10 mt-5 hover:bg-[#1BAA80] duration-500 hover:shadow py-4 rounded-full text-xl' type="submit" value="Send Message" />
                             </div>
-                        </div>
+                        </form>
                     </div>
                 </div>
             </div>
