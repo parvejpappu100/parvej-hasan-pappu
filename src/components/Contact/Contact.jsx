@@ -27,7 +27,7 @@ const Contact = () => {
     }
 
     return (
-        <div className='bg-[#F8F9FA] mt-24'>
+        <div className='bg-[#F8F9FA]'>
             <div className='py-28 max-w-7xl mx-auto'>
                 <SectionTitle
                     title={"Contact"}

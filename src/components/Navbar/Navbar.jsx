@@ -8,7 +8,7 @@ import HomeDefault from '../HomeDefault/HomeDefault';
 import Skills from '../Skills/Skills';
 import Projects from '../Projects/Projects';
 import Contact from '../Contact/Contact';
-// import Testimonial from '../TestTimonial/Testimonial';
+import Testimonial from '../TestTimonial/Testimonial';
 
 
 
@@ -33,6 +33,9 @@ const Navbar = () => {
                     </Element>
                     <Element name="portfolio" className="section">
                         <Projects></Projects>
+                    </Element>
+                    <Element name="testimonial" className="section">
+                       <Testimonial></Testimonial>
                     </Element>
                     <Element name="contact" className="section">
                        <Contact></Contact>
