@@ -29,7 +29,7 @@ const Contact = () => {
 
     return (
         <div>
-            <div className='bg-[#F8F9FA]'>
+            <div className='bg-[#F8F9FA] text-black'>
                 <div className='py-28 max-w-7xl mx-auto'>
                     <SectionTitle
                         title={"Contact"}
@@ -87,7 +87,7 @@ const Contact = () => {
                     </div>
                 </div>
             </div>
-            <div className=''>
+            <div className='bg-white text-black'>
                 <Footer></Footer>
             </div>
         </div>

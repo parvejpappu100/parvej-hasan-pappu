@@ -15,7 +15,7 @@ const Services = () => {
     }, []);
 
     return (
-        <div className='bg-[#F8F9FA]'>
+        <div className='bg-[#F8F9FA] text-black'>
             <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" className='py-28   max-w-7xl mx-auto'>
                 <SectionTitle
                     title={"Services"}
