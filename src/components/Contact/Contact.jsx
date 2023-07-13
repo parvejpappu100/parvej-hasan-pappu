@@ -3,6 +3,7 @@ import SectionTitle from '../SectionTitle/SectionTitle';
 import { FaEnvelope, FaFacebookF, FaGithub, FaInstagramSquare, FaLinkedinIn, FaPhoneAlt } from 'react-icons/fa';
 import { useForm } from 'react-hook-form';
 import Footer from '../Footer/Footer';
+import Swal from 'sweetalert2';
 
 const Contact = () => {
 
@@ -17,8 +18,8 @@ const Contact = () => {
                 },
                 body: JSON.stringify(data)
             });
-
             reset();
+            Swal.fire('Thank you ! I will reply your message within an hour.')
         } catch (error) {
             console.log(error)
         }
