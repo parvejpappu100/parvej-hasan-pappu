@@ -4,6 +4,7 @@ import 'react-progress-bar-plus/lib/progress-bar.css';
 import { FaDownload } from 'react-icons/fa';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import ResumePDF from "../../assets/resume/Resume of Parvej Hasan.pdf"
 
 const Skills = () => {
 
@@ -39,7 +40,12 @@ const Skills = () => {
                     </div>
                 </div>
                 <div className=' mt-12'>
-                    <button className='hover:bg-[#6C757D] hover:text-white border-2 border-black px-8 py-3 rounded-full text-xl font-semibold hover:border-[#6C757D] duration-1000 flex items-center gap-3 mx-auto'><span>Download Resume</span> <FaDownload></FaDownload></button>
+                    <a href={ResumePDF}
+                        download="Resume-PDF-document"
+                        target="_blank"
+                        rel="noreferrer">
+                        <button className='hover:bg-[#6C757D] hover:text-white border-2 border-black px-8 py-3 rounded-full text-xl font-semibold hover:border-[#6C757D] duration-1000 flex items-center gap-3 mx-auto'><span>Download Resume</span> <FaDownload></FaDownload></button>
+                    </a>
                 </div>
             </div>
         </div>

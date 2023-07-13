@@ -3,6 +3,7 @@ import myImg from "../../assets/images/bg-lady.png"
 import { TypeAnimation } from 'react-type-animation';
 import Lottie from "lottie-react";
 import animation3 from "../../assets/139020-unlock-bigger-scroll-down-animation.json"
+import ResumePDF from "../../assets/resume/Resume of Parvej Hasan.pdf"
 
 const HomeDefault = () => {
   return (
@@ -16,7 +17,7 @@ const HomeDefault = () => {
               <TypeAnimation
                 sequence={[
                   "I'm a Web Developer",
-                  1000, 
+                  1000,
                   "I'm a MERN Stack Developer",
                   1000,
                   "I'm a ReactJS Developer",
@@ -33,7 +34,16 @@ const HomeDefault = () => {
             </h2>
             <p className='text-xl text-center'>based is Dhaka, Bangladesh</p>
             <div className='flex justify-center mt-8'>
-              <button className='border-2 border-green-500 rounded-full px-4 py-3 text-green-500 font-semibold uppercase hover:text-white hover:bg-[#1FB88B] duration-500'>Download Resume</button>
+              <a href={ResumePDF}
+                download="Resume-PDF-document"
+                target="_blank"
+                rel="noreferrer">
+                <button
+                  className='border-2 border-green-500 rounded-full px-4 py-3 text-green-500 font-semibold uppercase hover:text-white hover:bg-[#1FB88B] duration-500'
+                >
+                  Download Resume
+                </button>
+              </a>
             </div>
           </div>
         </div>
