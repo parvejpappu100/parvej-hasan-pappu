@@ -7,7 +7,7 @@ import ResumePDF from "../../assets/resume/Resume of Parvej Hasan.pdf"
 
 const HomeDefault = () => {
   return (
-    <div className='lg:h-screen relative' >
+    <div className='lg:h-screen relative ' >
       <img className='h-full w-full object-cover ' src={myImg} alt="" />
       <div className='absolute top-0 left-0 w-full h-full flex justify-center items-center'>
         <div className='text-white'>

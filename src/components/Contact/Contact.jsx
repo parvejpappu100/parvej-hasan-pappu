@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import SectionTitle from '../SectionTitle/SectionTitle';
 import { FaEnvelope, FaFacebookF, FaGithub, FaInstagramSquare, FaLinkedinIn, FaPhoneAlt } from 'react-icons/fa';
 import { useForm } from 'react-hook-form';
@@ -8,8 +8,10 @@ import Swal from 'sweetalert2';
 const Contact = () => {
 
     const { register, handleSubmit, formState: { errors }, reset } = useForm();
+    const [sending , setSending] = useState(false);
 
     const onSubmit = async (data) => {
+        setSending(true);
         try {
             await fetch('https://parvej-hasan-pappu-server.vercel.app/send-email', {
                 method: 'POST',
@@ -19,6 +21,7 @@ const Contact = () => {
                 body: JSON.stringify(data)
             });
             reset();
+            setSending(false);
             Swal.fire('Thank you ! I will reply your message within an hour.')
         } catch (error) {
             console.log(error)
@@ -81,7 +84,7 @@ const Contact = () => {
                                 </div>
                                 <textarea {...register("message", { required: true })} className='bg-white w-full mt-5 p-5 rounded-lg border text-xl' name="message" placeholder='Tell me more about your needs...' id="" cols="30" rows="5"></textarea>
                                 <div className='flex justify-center'>
-                                    <input className='bg-[#20C997] text-white font-medium px-10 mt-5 hover:bg-[#1BAA80] duration-500 hover:shadow py-4 rounded-full text-xl' type="submit" value="Send Message" />
+                                    <input disabled={ sending} className='bg-[#20C997] text-white font-medium px-10 mt-5 hover:bg-[#1BAA80] duration-500 hover:shadow py-4 rounded-full text-xl' type="submit" value={sending ? "Sending..." : "Send Message"} />
                                 </div>
                             </form>
                         </div>
