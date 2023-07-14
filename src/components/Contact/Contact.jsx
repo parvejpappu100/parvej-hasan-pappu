@@ -30,7 +30,7 @@ const Contact = () => {
 
     return (
         <div>
-            <div className='bg-[#F8F9FA] text-black'>
+            <div className='bg-[#F8F9FA] text-black my-20'>
                 <div className='py-28 max-w-7xl mx-auto'>
                     <SectionTitle
                         title={"Contact"}

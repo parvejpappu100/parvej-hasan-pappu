@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link, Element } from 'react-scroll';
 import About from '../About/About';
 import Services from '../Services/Services';
@@ -8,9 +8,14 @@ import HomeDefault from '../HomeDefault/HomeDefault';
 import Skills from '../Skills/Skills';
 import Projects from '../Projects/Projects';
 import Contact from '../Contact/Contact';
+import "./Navbar.css"
 
 
 const Navbar = () => {
+
+    const [activeLink, setActiveLink] = useState('');
+    console.log(activeLink)
+
     return (
         <div>
             <div className="drawer lg:drawer-open">
@@ -33,7 +38,7 @@ const Navbar = () => {
                         <Projects></Projects>
                     </Element>
                     <Element name="contact" className="section">
-                       <Contact></Contact>
+                        <Contact></Contact>
                     </Element>
                     <label htmlFor="my-drawer-2" className="text-green-400 top-2 left-2 text-3xl fixed drawer-button lg:hidden"><FaBars></FaBars></label>
 
@@ -50,22 +55,51 @@ const Navbar = () => {
                         </div>
                         <div className='flex flex-col items-center'>
                             <li>
-                                <Link className='hover:text-green-500' to="home" smooth={true} duration={500}>Home</Link>
+                                <Link style={activeLink === 'home' ? { color: '#20C99A', backgroundColor: "black" } : {}}
+                                    className='hover:text-green-500'
+                                    to="home"
+                                    spy={true}
+                                    smooth={true}
+                                    duration={500}
+                                    onSetActive={() => setActiveLink('home')}>Home</Link>
                             </li>
                             <li>
-                                <Link className='hover:text-green-500' to="about" smooth={true} duration={500}>About Me</Link>
+                                <Link style={activeLink === 'about' ? { color: '#20C99A', backgroundColor: "black" } : {}}
+                                    className='hover:text-green-500'
+                                    to="about"
+                                    spy={true}
+                                    smooth={true}
+                                    duration={500}
+                                    onSetActive={() => setActiveLink('about')}>About Me</Link>
                             </li>
                             <li>
-                                <Link className='hover:text-green-500' to="services" smooth={true} duration={500}>What I Do</Link>
+                                <Link style={activeLink === 'services' ? { color: '#20C99A', backgroundColor: "black" } : {}}
+                                    className='hover:text-green-500'
+                                    to="services" spy={true}
+                                    smooth={true}
+                                    duration={500}
+                                    onSetActive={() => setActiveLink('services')}>What I Do</Link>
                             </li>
                             <li>
-                                <Link className='hover:text-green-500' to="skills" smooth={true} duration={500}>Skills</Link>
+                                <Link style={activeLink === 'skills' ? { color: '#20C99A', backgroundColor: "black" } : {}} className='hover:text-green-500'
+                                    to="skills" spy={true}
+                                    smooth={true}
+                                    duration={500}
+                                    onSetActive={() => setActiveLink('skills')}>Skills</Link>
                             </li>
                             <li>
-                                <Link className='hover:text-green-500' to="portfolio" smooth={true} duration={500}>Portfolio</Link>
+                                <Link style={activeLink === 'portfolio' ? { color: '#20C99A', backgroundColor: "black" } : {}} className='hover:text-green-500'
+                                    to="portfolio" spy={true}
+                                    smooth={true}
+                                    duration={500}
+                                    onSetActive={() => setActiveLink('portfolio')}>Portfolio</Link>
                             </li>
                             <li>
-                                <Link className='hover:text-green-500' to="contact" smooth={true} duration={500}>Contact</Link>
+                                <Link style={activeLink === 'contact' ? { color: '#20C99A', backgroundColor: "black" } : {}} className='hover:text-green-500'
+                                    to="contact" spy={true}
+                                    smooth={true}
+                                    duration={500}
+                                    onSetActive={() => setActiveLink('contact')}>Contact</Link>
                             </li>
                         </div>
                         <div className='text-[#AAB1B8] flex gap-4 text-xl justify-center'>
