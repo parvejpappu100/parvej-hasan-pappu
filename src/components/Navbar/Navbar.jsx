@@ -8,7 +8,6 @@ import HomeDefault from '../HomeDefault/HomeDefault';
 import Skills from '../Skills/Skills';
 import Projects from '../Projects/Projects';
 import Contact from '../Contact/Contact';
-import "./Navbar.css"
 
 
 const Navbar = () => {
