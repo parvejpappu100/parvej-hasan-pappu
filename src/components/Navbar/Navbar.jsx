@@ -8,8 +8,6 @@ import HomeDefault from '../HomeDefault/HomeDefault';
 import Skills from '../Skills/Skills';
 import Projects from '../Projects/Projects';
 import Contact from '../Contact/Contact';
-import Testimonial from '../TestTimonial/Testimonial';
-
 
 
 const Navbar = () => {
@@ -17,7 +15,7 @@ const Navbar = () => {
         <div>
             <div className="drawer lg:drawer-open">
                 <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
-                <div className="drawer-content  relative">
+                <div className="drawer-content">
                     {/* Page content here */}
                     <Element name="home" className="section">
                         <HomeDefault></HomeDefault>
@@ -33,9 +31,6 @@ const Navbar = () => {
                     </Element>
                     <Element name="portfolio" className="section">
                         <Projects></Projects>
-                    </Element>
-                    <Element name="testimonial" className="section">
-                       <Testimonial></Testimonial>
                     </Element>
                     <Element name="contact" className="section">
                        <Contact></Contact>
@@ -68,9 +63,6 @@ const Navbar = () => {
                             </li>
                             <li>
                                 <Link className='hover:text-green-500' to="portfolio" smooth={true} duration={500}>Portfolio</Link>
-                            </li>
-                            <li>
-                                <Link className='hover:text-green-500' to="testimonial" smooth={true} duration={500}>Testimonial</Link>
                             </li>
                             <li>
                                 <Link className='hover:text-green-500' to="contact" smooth={true} duration={500}>Contact</Link>

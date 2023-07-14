@@ -1,5 +1,4 @@
 import React from 'react';
-import myImg from "../../assets/images/bg-lady.png"
 import { TypeAnimation } from 'react-type-animation';
 import Lottie from "lottie-react";
 import animation3 from "../../assets/139020-unlock-bigger-scroll-down-animation.json"
@@ -7,10 +6,10 @@ import ResumePDF from "../../assets/resume/Resume of Parvej Hasan.pdf"
 
 const HomeDefault = () => {
   return (
-    <div className='lg:h-screen relative ' >
-      <img className='h-full w-full object-cover ' src={myImg} alt="" />
-      <div className='absolute top-0 left-0 w-full h-full flex justify-center items-center'>
-        <div className='text-white'>
+    <div className='relative'>
+      <div className="hero md:min-h-screen" style={{ backgroundImage: 'url(https://i.ibb.co/vhHj6pc/bg-lady.png)' }}>
+        <div className="hero-overlay bg-opacity-60"></div>
+        <div className="hero-content text-center text-neutral-content">
           <div className=''>
             <h5 className='text-xl md:text-3xl text-center font-semibold'>Welcome</h5>
             <h2>
@@ -48,7 +47,7 @@ const HomeDefault = () => {
           </div>
         </div>
       </div>
-      <div className='hidden md:block w-[96px] mx-auto -mt-16'>
+      <div className='hidden md:block w-[96px] mx-auto -mt-16 '>
         <Lottie animationData={animation3} loop={true}></Lottie>
       </div>
     </div>

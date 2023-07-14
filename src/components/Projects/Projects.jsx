@@ -28,7 +28,7 @@ const Projects = () => {
 
     return (
         <div className='bg-[#F8F9FA]'>
-            <div className='max-w-7xl mx-auto px-2 lg:px-0 py-28' data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+            <div className='max-w-7xl mx-auto px-2 py-12 lg:px-0 lg:py-28' data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
                 <SectionTitle
                     title={"Portfolio"}
                     subTitle={"My Work"}
