@@ -7,9 +7,9 @@ import ResumePDF from "../../assets/resume/Resume of Parvej Hasan.pdf"
 const HomeDefault = () => {
   return (
     <div className='relative'>
-      <div className="hero md:min-h-screen" style={{ backgroundImage: 'url(https://i.ibb.co/vhHj6pc/bg-lady.png)' }}>
-        <div className="hero-overlay bg-opacity-60"></div>
-        <div className="hero-content text-center text-neutral-content">
+      <div className="hero md:min-h-screen relative" style={{ backgroundImage: 'url(https://shorturl.at/iDEO4)' }}>
+        <div className="hero-overlay bg-black bg-opacity-60 absolute top-0 left-0 w-full h-full"></div>
+        <div className="hero-content text-center text-neutral-content relative z-10">
           <div className=''>
             <h5 className='text-xl md:text-3xl text-center font-semibold'>Welcome</h5>
             <h2>
@@ -31,7 +31,7 @@ const HomeDefault = () => {
                 className='text-2xl md:text-4xl lg:text-5xl'
               />
             </h2>
-            <p className='text-xl text-center'>based is Dhaka, Bangladesh</p>
+            <p className='text-xl text-center'>based in Dhaka, Bangladesh</p>
             <div className='flex justify-center mt-8'>
               <a href={ResumePDF}
                 download="Resume-PDF-document"

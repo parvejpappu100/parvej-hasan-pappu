@@ -24,16 +24,13 @@ const Contact = () => {
             setSending(false);
             Swal.fire('Thank you ! I will reply your message within an hour.')
         } catch (error) {
-            console.log(error)
+            
         }
-
-        console.log(data.name, data.email, data.message)
-        reset();
     }
 
     return (
         <div>
-            <div className='bg-[#F8F9FA] text-black px-3 mt-20'>
+            <div className='bg-[#F8F9FA] text-black'>
                 <div className='py-28 max-w-7xl mx-auto'>
                     <SectionTitle
                         title={"Contact"}

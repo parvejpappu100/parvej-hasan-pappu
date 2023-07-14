@@ -3,7 +3,7 @@ import { Link, Element } from 'react-scroll';
 import About from '../About/About';
 import Services from '../Services/Services';
 import { FaBars, FaFacebookF, FaGithub, FaInstagramSquare, FaLinkedinIn } from "react-icons/fa";
-import pappu from "../../assets/images/my-pic.jpeg"
+import pappu from "../../assets/images/pappu_linkedin.png"
 import HomeDefault from '../HomeDefault/HomeDefault';
 import Skills from '../Skills/Skills';
 import Projects from '../Projects/Projects';
