@@ -45,11 +45,11 @@ const Navbar = () => {
                     <label htmlFor="my-drawer-2" className="drawer-overlay"></label>
                     <ul className="menu p-4 w-80 h-full bg-black text-white font-semibold text-[16px]  items-center justify-between ">
                         {/* Sidebar content here */}
-                        <div className='md:hidden lg:block font-semibold pt-10 flex flex-col items-center'>
-                            <div className="tooltip normal-case" data-tip={"I'm Parvej Hasan Pappu"}>
-                                <img className='w-60 h-60 rounded-full border-8 border-[#343A40]' src={pappu} alt="" />
+                        <div className='md:w-[100px]  lg:w-full font-semibold pt-10 md:pt-0 lg:pt-10 flex flex-col items-center'>
+                            <div className="tooltip md:tooltip-right lg:tooltip normal-case" data-tip={"I'm Parvej Hasan Pappu"}>
+                                <img className='md:w-[100px] md:h-[100px] w-60 lg:w-60 h-60 lg:h-60 rounded-full border-8 border-[#343A40]' src={pappu} alt="" />
                             </div>
-                            <p className='text-center  text-xl  mt-3'>Parvej Hasan Pappu</p>
+                            <p className='text-center  text-xl md:hidden lg:block   mt-3'>Parvej Hasan Pappu</p>
                         </div>
                         <div className='flex flex-col items-center'>
                             <li>
