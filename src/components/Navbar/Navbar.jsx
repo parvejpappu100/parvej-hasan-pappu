@@ -13,8 +13,7 @@ import Contact from '../Contact/Contact';
 const Navbar = () => {
 
     const [activeLink, setActiveLink] = useState('');
-    console.log(activeLink)
-
+    
     return (
         <div>
             <div className="drawer lg:drawer-open">

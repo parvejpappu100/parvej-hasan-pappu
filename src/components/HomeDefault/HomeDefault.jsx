@@ -34,7 +34,7 @@ const HomeDefault = () => {
             <p className='text-xl text-center'>based in Dhaka, Bangladesh</p>
             <div className='flex justify-center mt-8'>
               <a href={ResumePDF}
-                download="Resume-PDF-document"
+                download="Resume of Parvej Hasan Pappu"
                 target="_blank"
                 rel="noreferrer">
                 <button

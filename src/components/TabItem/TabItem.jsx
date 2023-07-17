@@ -25,7 +25,7 @@ const TabItem = ({ project }) => {
     const { category, name, image } = project;
 
     return (
-        <div>
+        <div className='text-black'>
             <div onClick={openModal} className='relative mt-12 cursor-pointer'>
                 <div className="relative max-w-full h-[450px] overflow-hidden ">
                     <div className="h-max w-full transition-transform duration-[5000ms] ease-linear transform translate-y-0 hover:-translate-y-[calc(100%-18rem)] rounded-lg">

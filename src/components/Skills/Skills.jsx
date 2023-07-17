@@ -18,7 +18,7 @@ const Skills = () => {
     }, []);
 
     return (
-        <div className='bg-white text-black'>
+        <div className='bg-white'>
             <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" className='py-28  max-w-7xl mx-auto mt-24 '>
                 <SectionTitle
                     title={"Skills"}
@@ -41,7 +41,7 @@ const Skills = () => {
                 </div>
                 <div className=' mt-12'>
                     <a href={ResumePDF}
-                        download="Resume-PDF-document"
+                        download="Resume of Parvej Hasan Pappu"
                         target="_blank"
                         rel="noreferrer">
                         <button className='hover:bg-[#6C757D] hover:text-white border-2 border-black px-8 py-3 rounded-full text-xl font-semibold hover:border-[#6C757D] duration-1000 flex items-center gap-3 mx-auto'><span>Download Resume</span> <FaDownload></FaDownload></button>
