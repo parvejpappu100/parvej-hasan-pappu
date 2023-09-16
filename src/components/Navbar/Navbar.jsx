@@ -41,7 +41,7 @@ const Navbar = () => {
                     <label htmlFor="my-drawer-2" className="text-green-400 top-2 left-2 text-3xl fixed drawer-button lg:hidden"><FaBars></FaBars></label>
 
                 </div>
-                <div className="drawer-side">
+                <div className="drawer-side z-50">
                     <label htmlFor="my-drawer-2" className="drawer-overlay"></label>
                     <ul className="menu p-4 w-80 h-full bg-black text-white font-semibold text-[16px]  items-center justify-between ">
                         {/* Sidebar content here */}

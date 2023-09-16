@@ -36,7 +36,7 @@ const Contact = () => {
                         title={"Contact"}
                         subTitle={"Get in Touch"}
                     ></SectionTitle>
-                    <div className='flex flex-col md:flex-row gap-10 mt-24 px-2 lg:px-0'>
+                    <div className='flex flex-col md:flex-row gap-10 mt-24 px-4'>
                         <div className='text-xl '>
                             <h3 className='text-2xl font-semibold uppercase'>Address</h3>
                             <p className='my-4'>Dhaka , Bangladesh</p>

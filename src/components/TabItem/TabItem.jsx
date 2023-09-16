@@ -6,27 +6,15 @@ import ProjectModal from './ProjectModal';
 
 const TabItem = ({ project }) => {
 
-    const [modalIsOpen, setModalIsOpen] = useState(false);
+    const [showModal, setShowModal] = useState(false);
 
-    const openModal = () => {
-        setModalIsOpen(true);
-    };
-
-    const closeModal = () => {
-        setModalIsOpen(false);
-    };
-
-    const bg = {
-        overlay: {
-            background: "#46423E"
-        }
-    };
+    
 
     const { category, name, image } = project;
 
     return (
         <div className='text-black'>
-            <div onClick={openModal} className='relative mt-12 cursor-pointer'>
+            <div onClick={() => setShowModal(true)} className='relative mt-12 cursor-pointer'>
                 <div className="relative max-w-full h-[450px] overflow-hidden ">
                     <div className="h-max w-full transition-transform duration-[5000ms] ease-linear transform translate-y-0 hover:-translate-y-[calc(100%-18rem)] rounded-lg">
                         <img
@@ -43,14 +31,9 @@ const TabItem = ({ project }) => {
                     </div>
                 </div>
             </div>
-            <Modal
-                isOpen={modalIsOpen}
-                onRequestClose={closeModal}
-                className="max-w-7xl bg-white mx-auto my-16 shadow-md py-4"
-                style={bg}
-            >
-                <ProjectModal project={project} closeModal={closeModal}></ProjectModal>
-            </Modal>
+            <div>
+                <ProjectModal project={project} showModal={showModal} setShowModal={setShowModal}></ProjectModal>
+            </div>
         </div>
     );
 };

@@ -25,7 +25,7 @@ const Skills = () => {
                     subTitle={"My Skills"}
                 ></SectionTitle>
                 <div>
-                    <div className='grid grid-cols-1 md:grid-cols-2 gap-8 mt-20 px-3 md:px-5'>
+                    <div className='grid grid-cols-1 md:grid-cols-2 gap-8 mt-20 px-4'>
                         {
                             skills.map(skill => <div key={skill._id}>
                                 <div className='flex justify-between'>

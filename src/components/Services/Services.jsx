@@ -21,7 +21,7 @@ const Services = () => {
                     title={"Services"}
                     subTitle={"What I Do"}
                 ></SectionTitle>
-                <div className='grid px-2 md:px-4 lg:px-0 lg:grid-cols-2 gap-8 mt-24'>
+                <div className='grid px-4 md:px-4 lg:grid-cols-2 gap-8 mt-24'>
                     <div className='flex gap-5'>
                         <div className='rounded shadow-md w-32 h-20 p-5 bg-white text-3xl text-[#20C997]'>
                             <FaCode></FaCode>
